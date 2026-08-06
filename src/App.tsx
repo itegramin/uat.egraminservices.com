@@ -24,7 +24,7 @@ function App() {
               <Route path="/services" element={<Services />} />
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="*" element={<ErrorPage />} />
+              <Route path="*" element={<ErrorPage error={new Error('404')} resetErrorBoundary={() => { }} />} />
             </Routes>
           </main>
           <Footer />
